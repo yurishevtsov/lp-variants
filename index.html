@@ -81,6 +81,30 @@
     margin-bottom:4px;
   }
   .card p{color:var(--cream-dim);font-size:0.9rem;font-weight:300;}
+  .card ul.chg{
+    list-style:none;
+    margin-top:12px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px 20px;
+  }
+  .card ul.chg li{
+    color:rgba(217,205,184,0.75);
+    font-size:0.8rem;
+    font-weight:300;
+    line-height:1.45;
+    padding-left:15px;
+    position:relative;
+  }
+  .card ul.chg li::before{
+    content:"+";
+    position:absolute;left:0;top:0;
+    color:rgba(217,168,106,0.7);
+    font-family:ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media(max-width:640px){
+    .card ul.chg{grid-template-columns:1fr;}
+  }
   .card .arrow{color:var(--gold-soft);font-size:1.2rem;opacity:0.6;transition:opacity 0.2s ease, transform 0.2s ease;}
   a.card:hover .arrow{opacity:1;transform:translateX(4px);}
   footer{
@@ -111,7 +135,15 @@
       <span class="num">01</span>
       <div>
         <h2>Refinada</h2>
-        <p>El diseño original con navegación móvil, accesibilidad, SEO y correcciones de conversión.</p>
+        <p>El diseño original, con la ejecución corregida.</p>
+        <ul class="chg">
+          <li>Menú móvil accesible (antes no existía)</li>
+          <li>Mapa con la ubicación real y botón «Cómo llegar»</li>
+          <li>CTA de WhatsApp por paquete, con mensaje prellenado</li>
+          <li>Meta SEO, Open Graph, datos estructurados y favicon</li>
+          <li>Foco visible, contraste y <em>reduced motion</em></li>
+          <li>Tipografías embebidas, sin dependencias externas</li>
+        </ul>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -119,7 +151,15 @@
       <span class="num">02</span>
       <div>
         <h2>Premium</h2>
-        <p>Canopia de luces viva, revelados al hacer scroll, navegación con scrollspy y ambientes ilustrados.</p>
+        <p>Todo lo de 01, más una capa editorial y de movimiento.</p>
+        <ul class="chg">
+          <li>Canopia de luces y partículas cálidas en el hero</li>
+          <li>Entrada secuenciada y revelados al hacer scroll</li>
+          <li>Scrollspy: la navegación marca la sección activa</li>
+          <li>Ambientes ilustrados en SVG (antes, cajas vacías)</li>
+          <li>Sección «Cómo reservar» en tres pasos</li>
+          <li>Paquete más elegido, destacado y elevado</li>
+        </ul>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -127,7 +167,15 @@
       <span class="num">03</span>
       <div>
         <h2>Showcase</h2>
-        <p>Explorador de ambientes con pestañas, carrusel móvil, paquetes diferenciales, parallax y spotlight.</p>
+        <p>Todo lo de 02, más interacción y menos scroll en móvil.</p>
+        <ul class="chg">
+          <li>Carrusel deslizable de eventos en móvil (~22% menos scroll)</li>
+          <li>Explorador de ambientes con pestañas accesibles</li>
+          <li>Paquetes diferenciales («todo lo de X, más…») expandibles</li>
+          <li>Titular con máscara, contadores y spotlight al cursor</li>
+          <li>Parallax en la canopia de luces</li>
+          <li>Puntos de progreso laterales en desktop</li>
+        </ul>
       </div>
       <span class="arrow">→</span>
     </a>
